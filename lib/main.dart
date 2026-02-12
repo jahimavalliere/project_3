@@ -5,12 +5,10 @@ void main() {
   runApp(const MyApp());
 }
 
-/// ================= FAKE DATABASE =================
 Map<String, String> usersDatabase = {
   "test@gmail.com": "Test1234",
 };
 
-/// ================= VALIDATIONS =================
 bool isValidEmail(String email) {
   final regex =
   RegExp(r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$');
@@ -33,8 +31,6 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-/* ================= SPLASH SCREEN ================= */
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -74,8 +70,6 @@ class _SplashScreenState extends State<SplashScreen> {
     );
   }
 }
-
-/* ================= LOGIN PAGE ================= */
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -191,8 +185,6 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 }
-
-/* ================= SIGNUP PAGE ================= */
 
 class SignupPage extends StatefulWidget {
   const SignupPage({super.key});
@@ -325,8 +317,6 @@ class _SignupPageState extends State<SignupPage> {
     );
   }
 }
-
-/* ================= HOME PAGE ================= */
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
